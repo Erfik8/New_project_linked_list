@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1559590229 source:c:\users\admin\desktop\lista_powi¹zana_nowa\main.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+	<conio.h>
+
+1559588400 c:\users\admin\desktop\lista_powi¹zana_nowa\element_listy.h
+	<iostream>
+	<windows.h>
+	<conio.h>
+
+1559590461 source:c:\users\admin\desktop\lista_powi¹zana_nowa\element_listy.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+
