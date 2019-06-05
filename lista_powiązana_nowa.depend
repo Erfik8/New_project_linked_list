@@ -15,3 +15,19 @@
 	<windows.h>
 	"element_listy.h"
 
+1559735562 source:e:\archiwum c++\lista_powi¹zana_nowa\main.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+	<conio.h>
+
+1559735562 e:\archiwum c++\lista_powi¹zana_nowa\element_listy.h
+	<iostream>
+	<windows.h>
+	<conio.h>
+
+1559735626 source:e:\archiwum c++\lista_powi¹zana_nowa\element_listy.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+

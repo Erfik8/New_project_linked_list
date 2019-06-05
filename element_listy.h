@@ -25,7 +25,8 @@ class my_new_list
 
         void show(bool=true);
         void change();
-
+        void set_new_ID_number(int const number);
+        my_new_list *get_element_by_ID(int const id);
 };
 
 void Show_Manage_menu();

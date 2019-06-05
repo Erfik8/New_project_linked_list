@@ -98,14 +98,14 @@ my_new_list::~my_new_list()
 void my_new_list::show(bool show_all)
 {
 
+    std::cout<<"Numer porzadkowy: :"<<ID<<std::endl;
+    std::cout<<std::endl;
     std::cout<<"Imie: "<<name<<std::endl;
     std::cout<<"Nazwisko: "<<surname<<std::endl;
     std::cout<<"Numer telefonu: "<<telephone<<std::endl;
     std::cout<<"Numer Pesel: "<<pesel<<std::endl;
     std::cout<<"Adres e-mail: :"<<e_mail<<std::endl;
 
-    if(this->previous == NULL && this->next==NULL)
-        ID = 1;
 
     if (show_all == false) return;
     if (this->next != NULL)
@@ -194,6 +194,15 @@ void my_new_list::change()
 
 }
 
+void my_new_list::set_new_ID_number(int number)
+{
+    this->ID = number;
+    if (this->next != NULL)
+    {
+        this->next->set_new_ID_number(++number);
+    }
+    else return;
+}
 
 
 
@@ -217,3 +226,20 @@ void Show_Manage_menu()
                  << "wcisnij dowolny klawisz, aby wyjsc"<<std::endl;
 }
 
+my_new_list *my_new_list::get_element_by_ID(int const id)
+{
+    if (this->ID < id)
+    {
+        if (this->next == NULL) return NULL;
+
+        this->next->get_element_by_ID(id);
+    }
+    else if (this->ID > id)
+    {
+        if (this->previous == NULL) return NULL;
+
+        this->previous->get_element_by_ID(id);
+    }
+    else if (this->ID == id) return this;
+    else return NULL;
+}

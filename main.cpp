@@ -72,6 +72,7 @@ int main()
                                         _First_ = New_previous;
                                     }
                                     New_previous = NULL;
+                                    _First_->set_new_ID_number(0);
 
                             }break;
                         case '2':
@@ -82,6 +83,7 @@ int main()
                                         _Last_ = New_next;
                                     }
                                     New_next = NULL;
+                                    _First_->set_new_ID_number(0);
                             }break;
                         case '3':
                             {
@@ -107,6 +109,7 @@ int main()
                                 }
                                 delete Management;
                                 Management = _First_;
+                                _First_->set_new_ID_number(0);
 
                             }break;
                         case '5':
@@ -149,6 +152,22 @@ int main()
                                     exit(0);
                                 }
                             }break;
+                        case 'J':
+                        case 'j':
+                            {
+                                std::cout << "wpisz numer elementu: ";
+                                int search_id;
+                                std::cin>>search_id;
+                                my_new_list *search_element = Management->get_element_by_ID(search_id);
+                                if (search_element == NULL)
+                                {
+                                    std::cout << "ERROR: podano zly parametr";
+                                    break;
+                                }
+                                Management = search_element;
+                            }break;
+
+
 
                         default:    Escape = true;   break;
 
