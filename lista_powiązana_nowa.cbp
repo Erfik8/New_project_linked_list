@@ -35,7 +35,6 @@
 		</Compiler>
 		<Unit filename="element_listy.cpp" />
 		<Unit filename="element_listy.h" />
-		<Unit filename="funkcje_pomocnicze.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
