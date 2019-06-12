@@ -31,3 +31,24 @@
 	<windows.h>
 	"element_listy.h"
 
+1560362196 source:f:\archiwum c++\lista_powi¹zana_nowa\element_listy.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+
+1560272178 f:\archiwum c++\lista_powi¹zana_nowa\element_listy.h
+	<iostream>
+	<windows.h>
+	<conio.h>
+
+1560271532 source:f:\archiwum c++\lista_powi¹zana_nowa\main.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+	<conio.h>
+
+1560361688 source:f:\archiwum c++\lista_powi¹zana_nowa\funkcje_pomocnicze.cpp
+	<iostream>
+	<windows.h>
+	"element_listy.h"
+
